@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>AI智能体 Web 界面</title>
+</head>
+<body>
+<h1>AI 智能体 Web 前端</h1>
+<form action="/al/invoke" method="post">
+    <label>输入：</label> <input type="text" name="input" required>
+    <button type="submit">提交</button>
+</form>
+<div th:if="${result}">
+    <h3>结果：</h3>
+    <p th:text="${result}"></p>
+</div>
+</body>
+</html>
